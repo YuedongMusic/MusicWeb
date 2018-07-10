@@ -15,19 +15,15 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserMapper userMapper;
+
     @Override
-    public PageInfo<User> TestfindAllUser(int pageNum, int pageSize) {
+    public PageInfo<User> findAllUser(int pageNum, int pageSize) {
         //将参数传给这个方法就可以实现物理分页了，非常简单。
         PageHelper.startPage(pageNum, pageSize);
-        List<User> userDomains = userMapper.selectAllUser();
-        PageInfo result = new PageInfo(userDomains);
-        return result;
+        List<User> users=userMapper.SelectAllUser();
+        PageInfo result=new PageInfo(users);
+        if (result==null)
+            return null;
+        else return result;
     }
-
-    public int addUser(User user) {
-
-        return userMapper.insertSelective(user);
-    }
-
-
 }

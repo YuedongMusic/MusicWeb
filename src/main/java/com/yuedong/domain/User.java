@@ -1,9 +1,7 @@
 package com.yuedong.domain;
 
-import java.util.Date;
-
 public class User {
-    private String user_name;
+    private String username;
 
     private String password;
 
@@ -16,11 +14,11 @@ public class User {
     private String address;
 
     public String getUserName() {
-        return user_name;
+        return username;
     }
 
-    public void setUserName(String user_name) {
-        this.user_name = user_name == null ? null : user_name.trim();
+    public void setUserName(String userName) {
+        this.username = userName == null ? null : userName.trim();
     }
 
     public String getPassword() {
@@ -43,16 +41,16 @@ public class User {
         return gender;
     }
 
-    public void setGender(String  gender) {
-        this.gender = gender;
+    public void setGender(String gender) {
+        this.gender = gender == null ? null : gender.trim();
     }
 
-    public String  getBirth() {
+    public String getBirth() {
         return birth;
     }
 
     public void setBirth(String birth) {
-        this.birth = birth;
+        this.birth = birth == null ? null : birth.trim();
     }
 
     public String getAddress() {
