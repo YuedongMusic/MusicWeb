@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>singermanage.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+	<!-- css -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/singermanage.css" rel="stylesheet">
+	
+	 
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+
+  </head>
+  
+  <body>
+    <div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<!-- 添加歌手按钮 --><!-- 使用模态框 -->
+			 <button class="btn btn-default" data-toggle="modal" data-target="#addSingerModal" id="add-singer-btn" type="button">添加歌手</button>
+			<!-- 音乐信息表格 -->
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>
+							序号
+						</th>
+						<th>
+							歌手名
+						</th>
+						<th>
+							性别
+						</th>
+						<th>
+							音乐数
+						</th>
+						<th>
+							语种
+						</th>
+						<th>
+							编辑
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							单雯
+						</td>
+						<td>
+							女
+						</td>
+						<td>
+							10
+						</td>
+						<td>
+							华语
+						</td>
+						<td>
+          					&ensp;&ensp;
+          					<a href="#"><span class="glyphicon glyphicon-edit"></span></a>
+          					&ensp;&ensp;
+          					<a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							Adele
+						</td>
+						<td>
+							女
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							欧美
+						</td>
+						<td>
+          					&ensp;&ensp;
+          					<a href="#"><span class="glyphicon glyphicon-edit"></span></a>
+          					&ensp;&ensp;
+          					<a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+						</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	  </div>
+    </div>
+    
+    
+    
+    <!-- 添加歌手模态框 -->
+<div class="modal fade" id="addSingerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					添加歌手
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-horizontal" role="form">
+			  <table >
+			    <tbody>
+			      <tr>
+			        <td>歌手名</td>
+			        <td id="regstername">
+			        <input type="text" class="form-control" id="singer-name" >
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>性别</td>
+			        <td>
+			          <select class="form-control" id="singer-sex">
+					    <option>男</option>
+      				    <option>女</option>
+   					  </select>
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>语种</td>
+			        <td>
+			          <select class="form-control" id="language-classify">
+					    <option>华语</option>
+      				    <option>欧美</option>
+      				    <option>日本</option>
+   					  </select>
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>简介</td>
+			        <td>
+			        <input type="text" class="form-control"  id="singer-intro" >
+			        </td>
+			      </tr>
+			      <tr>
+			        <td></td>
+			        <td>
+			        <button type="submit" class="btn btn-default" id="add-singer-btn2">添加</button>
+			        </td>
+			      </tr>
+			    </tbody>
+			  </table>
+			
+
+			  
+			</form>
+			</div>
+			
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+  </body>
+</html>
