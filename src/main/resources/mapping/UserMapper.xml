@@ -1,71 +1,125 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.yuedong.mapper.UserMapper">
-  <resultMap id="BaseResultMap" type="com.yuedong.domain.User">
-    <id column="testId" jdbcType="INTEGER" property="testid" />
-    <result column="testName" jdbcType="VARCHAR" property="testname" />
-    <result column="testPassword" jdbcType="VARCHAR" property="testpassword" />
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yuedong.mapper.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.yuedong.domain.User" >
+    <id column="userid" property="userid" jdbcType="INTEGER" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="gender" property="gender" jdbcType="VARCHAR" />
+    <result column="birth" property="birth" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
   </resultMap>
-  <sql id="Base_Column_List">
-    testId, testName, testPassword
+  <sql id="Base_Column_List" >
+    userid, username, password, email, gender, birth, address
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
-    from test
-    where testId = #{testid,jdbcType=INTEGER}
+    from user_info
+    where userid = #{userid,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from test
-    where testId = #{testid,jdbcType=INTEGER}
+
+  <!--<select id="selectByUsername" resultMap="BaseResultMap">-->
+    <!--select -->
+    <!--<include refid="Base_Column_List"/>-->
+    <!--from user_info-->
+    <!--where username = #{userName,jdbcType=VARCHAR} AND password = #{password,jdbcType=VARCHAR}-->
+  <!--</select>-->
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from user_info
+    where userid = #{userid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.yuedong.domain.User">
-    insert into test (testId, testName, testPassword
-      )
-    values (#{testid,jdbcType=INTEGER}, #{testname,jdbcType=VARCHAR}, #{testpassword,jdbcType=VARCHAR}
-      )
+  <insert id="insert" parameterType="com.yuedong.domain.User" >
+    insert into user_info ( username, password,
+      email, gender, birth, 
+      address)
+    values ( #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+      #{email,jdbcType=VARCHAR}, #{gender,jdbcType=VARCHAR}, #{birth,jdbcType=DATE}, 
+      #{address,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.yuedong.domain.User">
-    insert into test
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="testid != null">
-        testId,
+  <insert id="insertSelective" parameterType="com.yuedong.domain.User" >
+    insert into user_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userid != null" >
+        userid,
       </if>
-      <if test="testname != null">
-        testName,
+      <if test="username != null" >
+        username,
       </if>
-      <if test="testpassword != null">
-        testPassword,
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="email != null" >
+        email,
+      </if>
+      <if test="gender != null" >
+        gender,
+      </if>
+      <if test="birth != null" >
+        birth,
+      </if>
+      <if test="address != null" >
+        address,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="testid != null">
-        #{testid,jdbcType=INTEGER},
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userid != null" >
+        #{userid,jdbcType=INTEGER},
       </if>
-      <if test="testname != null">
-        #{testname,jdbcType=VARCHAR},
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
       </if>
-      <if test="testpassword != null">
-        #{testpassword,jdbcType=VARCHAR},
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null" >
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="birth != null" >
+        #{birth,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.yuedong.domain.User">
-    update test
-    <set>
-      <if test="testname != null">
-        testName = #{testname,jdbcType=VARCHAR},
+  <update id="updateByPrimaryKeySelective" parameterType="com.yuedong.domain.User" >
+    update user_info
+    <set >
+      <if test="username != null" >
+        username = #{username,jdbcType=VARCHAR},
       </if>
-      <if test="testpassword != null">
-        testPassword = #{testpassword,jdbcType=VARCHAR},
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null" >
+        gender = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="birth != null" >
+        birth = #{birth,jdbcType=DATE},
+      </if>
+      <if test="address != null" >
+        address = #{address,jdbcType=VARCHAR},
       </if>
     </set>
-    where testId = #{testid,jdbcType=INTEGER}
+    where userid = #{userid,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.yuedong.domain.User">
-    update test
-    set testName = #{testname,jdbcType=VARCHAR},
-      testPassword = #{testpassword,jdbcType=VARCHAR}
-    where testId = #{testid,jdbcType=INTEGER}
+  <update id="updateByPrimaryKey" parameterType="com.yuedong.domain.User" >
+    update user_info
+    set username = #{username,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=VARCHAR},
+      birth = #{birth,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR}
+    where userid = #{userid,jdbcType=INTEGER}
   </update>
 </mapper>
