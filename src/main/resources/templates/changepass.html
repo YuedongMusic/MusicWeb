@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>changepass.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    
+    <!-- css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/changepass.css" rel="stylesheet">
+	
+	 
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+
+  </head>
+  
+  <body>
+    <div class="container" style="width:500px;">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<!-- 表单 -->
+			<form class="form-horizontal" role="form">
+			  <table >
+			    <tbody>
+			      <tr>
+			        <td>管理员ID</td>
+			        <td id="administratorid">10001
+			        <!-- <input type="text" class="form-control" id="administratorID" placeholder="10001" readonly> -->
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>管理员用户名</td>
+			        <td id="administratorname">某某
+			        <!-- <input type="text" class="form-control" id="administratorname" placeholder="某某" readonly> -->
+			        </td>
+			      </tr>
+			      
+			       <tr>
+			        <td>输入旧密码</td>
+			        <td><input type="password" class="form-control" id="oldpassword"></td>
+			      </tr>
+			      <tr>
+			        <td>输入新密码</td>
+			        <td><input type="password" class="form-control" id="newpassword1"></td>
+			      </tr>
+			      <tr>
+			        <td>再次输入旧密码</td>
+			        <td><input type="password" class="form-control" id="newpassword2"></td>
+			      </tr>
+			    </tbody>
+			  </table>
+			
+			  <div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+				  <button type="submit" class="btn btn-default" id="modify-btn">修改</button>
+				</div>
+			  </div>
+			</form>
+			
+		</div>
+		<div class="col-md-3 column">
+		</div>
+	</div>
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/administrator.css" rel="stylesheet">
+	
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/administrator.js"></script>
+	
+</head>
+<body>
+  <!-- 后台管理header --> 
+  <div class="container" id="header-container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+
+				<div class="col-md-9 column" >
+				  <!-- 网页icon+标题 -->
+				  <img id="header-icon" alt="140x140" src="images/MusicIcon.png" />
+				  <span id="header-font" style="margin:30px;">悦动音乐-后台管理</span>
+				</div>
+				
+				<div class="col-md-3 column" id="header-info">
+				  <div class="row clearfix">
+				    <div class="col-md-2 column">
+				    </div>
+	  			    <div class="col-md-10 column">
+					  <!-- 用户信息+退出按钮 -->
+					  
+					  <span id="header-welcome">欢迎,</span>
+					  <span id="header-user">某某</span>
+					  &ensp;&ensp;<button class="btn btn-sm" type="button">退出</button>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+  
+  <!-- 分割线 -->
+  <div class="container" id="header-container">
+	<div class="row clearfix">
+	  <div class="col-md-12 column">
+  	    <div class="line-1"></div>
+  	  </div>
+  	</div>
+  </div>
+
+  <!--  -->
+  <div class="container">
+	<div class="row clearfix">
+	  <!-- 子风琴切换-管理员功能列表 -->
+		<div class="col-md-3 column">
+			<div class="panel-group" id="panel-register-01" data-toggle="collapse">
+				<!-- 首页 -->
+				<div class="panel panel-default" id="administrator-index">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" href="#" data-toggle="collapse" data-parent="#panel-register-01">首页</a>
+					</div>
+				</div>
+				<!-- 音乐管理 -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title" href="#panel-element-music-manage" data-toggle="collapse" data-parent="#panel-register-01">歌手音乐管理</a>
+					</div>
+					<div class="panel-collapse in" id="panel-element-music-manage">
+						<div class="panel-body" id="music-manage">
+							音乐管理
+						</div>
+						<div class="panel-body" id="singer-manage">
+							歌手管理
+						</div>
+					</div>
+				</div>
+				<!-- 用户管理 -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title" href="#panel-element-user-manage" data-toggle="collapse" data-parent="#panel-register-01">用户管理</a>
+					</div>
+					<div class="panel-collapse in" id="panel-element-user-manage">
+						<div class="panel-body" id="delete-user">
+							删除用户
+						</div>
+					</div>
+				</div>
+				<!-- 系统管理 -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title" href="#panel-element-system-manage" data-toggle="collapse" data-parent="#panel-register-01">系统管理</a>
+					</div>
+					<div class="panel-collapse in" id="panel-element-system-manage">
+						<div class="panel-body" id="change-pass">
+							修改密码
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 分割线 -->
+		<div class="col-md-1 column">
+		<div class="line-2"></div>
+		</div>
+		
+		<!-- 具体功能面板 -->
+		<div class="col-md-8 column">
+		<!-- 内联页面 -->
+		<!-- 添加音乐 -->
+		<iframe src="administratorindex.html" frameborder="no" class='register-iframe' id="register-iframe"></iframe>
+		
+		</div>
+	</div>
+  </div>
+
+</body>
+</html>
