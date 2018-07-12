@@ -1,0 +1,62 @@
+#header-container {
+	height:100px;
+	padding-top:160px;
+	padding-left:450px;
+	float:center;
+}
+
+#login-container {
+	height:100px;
+	padding-top:100px;
+	padding-left:310px;
+	float:center;
+}
+
+#header-icon {
+	max-height:80px;
+	max-width:80px;
+}
+
+#header-font {
+	font-size:30px;
+	font-weight:bold;
+	padding-top:5px;
+}
+
+#login-font-1{
+	font-size:22px;
+	font-weight:bold;
+	padding-top:35px;
+}
+
+#login-font-2{
+	font-size:22px;
+	font-weight:bold;
+	padding-top:12px;
+}
+
+.line{
+	height:3px;
+	width:45px;
+	margin-left:70px;
+	background-color: #FDE96E;
+}
+
+#firstname-1{
+	margin-top:35px;
+}
+
+#firstname-2{
+	margin-top:11px;
+}
+
+#btu-1{
+	margin-left:140px;
+	margin-top:25px;
+}
+
+#btu-2{
+	margin-left:85px;
+	margin-top:25px;
+}
+

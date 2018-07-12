@@ -1,0 +1,56 @@
+#main-container{
+	padding-top:200px;
+	float:left;
+}
+
+#btu-container{
+	padding-top:450px;
+	float:center;
+}
+
+.pic{
+	max-height:600px;
+	max-width:600px;
+	float:right;
+}
+
+#userInfo-font
+{
+	font-size:20px;
+	padding-left:150px;
+	padding-top:13px;
+}
+
+#firstname-1{
+	margin-top:1px;
+}
+
+#firstname-2{
+	margin-top:11px;
+}
+
+#login-font-1{
+	font-size:17px;
+	padding-top:5px;
+	font-weight:normal;
+}
+
+#login-font-2{
+	font-size:17px;
+	padding-top:17px;
+	font-weight:normal;
+}
+
+#editform{
+	padding-left:40px;
+}
+
+#btu-1{
+	margin-left:230px;
+	margin-top:-70px;
+}
+
+#btu-2{
+	margin-left:265px;
+	margin-top:15px;
+}

@@ -1,0 +1,54 @@
+#main-container{
+	padding-top:100px;
+}
+
+#Headline-1{
+	font-size:23px;
+}
+
+#Headline-2{
+	font-size:18px;
+	padding-top:5px;
+}
+
+.pagination li a{
+	padding-left:10px;
+	padding-top:3px;
+	height:25px;
+	font-size:15px;
+}
+
+.pagination{
+	padding-top:20px;
+	padding-left:80px;
+	font-size:15px;
+}
+
+#play-icon{
+	max-height:35px;
+	max_weight:35px;
+	padding-left:65px;
+}
+
+#music-table{
+	margin-left:65px;
+	width:600px;
+}
+
+.list-number{
+	font-size:18px;
+	padding-left:30px;
+}
+
+.list-font-1{
+	font-size:18px;
+}
+
+.list-font-2 {
+	font-size:12px;
+}
+
+.song-list-frame{
+	width:100%;
+	height:1200px;
+}

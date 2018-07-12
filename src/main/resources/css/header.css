@@ -1,0 +1,38 @@
+#header-container {
+	height:100px;
+	padding-top:10px;
+	float:center;
+}
+
+#header-icon {
+	max-height:65px;
+	max-width:65px;
+}
+
+#header-font {
+	font-size:35px;
+	padding-top:45px;
+}
+
+#header-navbar a{
+	
+	font-size:20px;
+}
+.navbar-header{
+	height:20px;
+}
+
+#user-icon {
+	max-height:65px;
+	max-width:65px;
+	float:center;
+	padding-left:15px;
+	margin-top:-10px;
+}
+
+.line-header{
+	height:7px;
+	width:1140px;
+	float:center;
+	background-color: #FDE96E;
+}

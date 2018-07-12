@@ -1,0 +1,57 @@
+#search-container {
+	padding-top:200px;
+	padding-left:330px;
+}
+
+
+
+
+#taps-container {
+	padding-top:40px;
+}
+
+#pag-container{
+	padding-left:330px;
+}
+
+#searchtext{
+	float:right;
+	padding-top:15px;
+}
+
+.glyphicon-play-circle{
+	font-size:15px;
+	margin-top:3px;
+	padding-left:5px;
+}
+
+.glyphicon-download-alt{
+	
+}
+
+.glyphicon-star-empty{
+	
+}
+
+.table{
+	
+}
+
+td{
+	height:45px;
+	width:120px;
+}
+
+.pagination li a{
+	padding-left:10px;
+	padding-top:3px;
+	height:25px;
+	font-size:15px;
+}
+
+.pagination{
+	padding-top:50px;
+	padding-left:40px;
+	font-size:15px;
+}
+
