@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>搜索列表</title>
+<!-- css -->
+	 
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+	 <!--
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">-->
+	<link href="css/search.css" rel="stylesheet">
+	
+	 
+	<!-- js -->
+	
+	<script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+	
+	 <script type="text/javascript">
+    	/* 搜索框  */
+    	    function onKeyDown(event){
+                var e = event || window.event || arguments.callee.caller.arguments[0];    
+                     if(e && e.keyCode==13){ // enter 键
+                          alert("此处回车触发搜索事件");
+                     }
+                 }
+    </script>
+	
+</head>
+<body>
+<div class="container" id="search-container">
+	<div class="row clearfix">
+
+<!-- 搜索栏 -->
+<div style="border:2px solid #a1a1a1;border-radius:25px; height:50px;width:300px;margin-left:80px">
+  <span class="glyphicon glyphicon-search" style="padding:15px;"></span>
+  <input type="text" class="" style="border-width:0px;width:220px;outline:none;" onkeydown="onKeyDown(event)"/>         
+</div>
+   
+
+  </div>
+</div>
+
+<!-- 选项卡 -->
+<div class="container"id="taps-container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="tabbable" id="tabs">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						 <a href="#panel-1" data-toggle="tab">歌曲</a>
+					</li>
+					<li>
+						 <a href="#panel-2" data-toggle="tab">歌手</a>
+					</li>
+					<li>
+						 <a href="#panel-3" data-toggle="tab">专辑</a>
+					</li>
+					<li id="searchtext">
+						 搜索结果
+					</li>
+										
+				</ul>
+				
+				<div class="tab-content">
+					<div class="tab-pane active" id="panel-1">
+							<table class="table">
+				<tbody>
+					<tr>
+						<td>
+						    傲寒
+
+						</td>
+						<td>			
+							<i class="glyphicon glyphicon-play-circle">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-download-alt">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-star-empty">
+							</i>
+						</td>
+						<td>
+							马頔
+						</td>
+						<td>
+							《傲寒》
+						</td>
+						<td>
+							05:57
+						</td>
+					</tr>
+					<tr>
+						<td>
+						    傲寒（Cover：马頔）
+
+						</td>
+						<td>			
+							<i class="glyphicon glyphicon-play-circle">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-download-alt">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-star-empty">
+							</i>
+						</td>
+						<td>
+							月河
+						</td>
+						<td>
+							《月河的民谣翻唱》
+						</td>
+						<td>
+							06:06
+						</td>
+					</tr>
+					<tr>
+						<td>
+						    傲寒（Cover：马頔）
+
+						</td>
+					      <td>			
+							<i class="glyphicon glyphicon-play-circle">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-download-alt">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-star-empty">
+							</i>
+						</td>
+						<td>
+							于邻
+						</td>
+						<td>
+							《路痴的指北针》
+						</td>
+						<td>
+							04:33
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+					</div>
+					<div class="tab-pane" id="panel-2">
+							<table class="table">
+				<tbody>
+					<tr>
+						<td>
+						    傲寒
+
+						</td>
+						<td>			
+							<i class="glyphicon glyphicon-play-circle">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-download-alt">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-star-empty">
+							</i>
+						</td>
+						<td>
+							马頔
+						</td>
+						<td>
+							《傲寒》
+						</td>
+						<td>
+							5:57
+						</td>
+					</tr>
+					<tr>
+						<td>
+						    傲寒
+
+						</td>
+						<td>			
+							<i class="glyphicon glyphicon-play-circle">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-download-alt">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-star-empty">
+							</i>
+						</td>
+						<td>
+							马頔
+						</td>
+						<td>
+							《傲寒》
+						</td>
+						<td>
+							5:57
+						</td>
+					</tr>
+					<tr>
+						<td>
+						    傲寒
+
+						</td>
+						<td>			
+							<i class="glyphicon glyphicon-play-circle">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-download-alt">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-star-empty">
+							</i>
+						</td>
+						<td>
+							马頔
+						</td>
+						<td>
+							《傲寒》
+						</td>
+						<td>
+							5:57
+						</td>
+					</tr>
+				</tbody>
+			</table>
+					</div>
+					<div class="tab-pane" id="panel-3">
+							<table class="table">
+				<tbody>
+					<tr>
+						<td>
+						    傲寒
+
+						</td>
+						<td>			
+							<i class="glyphicon glyphicon-play-circle">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-download-alt">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-star-empty">
+							</i>
+						</td>
+						<td>
+							马頔
+						</td>
+						<td>
+							《傲寒》
+						</td>
+						<td>
+							5:57
+						</td>
+					</tr>
+					<tr>
+						<td>
+						    傲寒
+
+						</td>
+						<td>			
+							<i class="glyphicon glyphicon-play-circle">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-download-alt">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-star-empty">
+							</i>
+						</td>
+						<td>
+							马頔
+						</td>
+						<td>
+							《傲寒》
+						</td>
+						<td>
+							5:57
+						</td>
+					</tr>
+					<tr>
+						<td>
+						    傲寒
+
+						</td>
+						<td>			
+							<i class="glyphicon glyphicon-play-circle">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-download-alt">
+							</i>
+							&nbsp;
+							<i class="glyphicon glyphicon-star-empty">
+							</i>
+						</td>
+						<td>
+							马頔
+						</td>
+						<td>
+							《傲寒》
+						</td>
+						<td>
+							5:57
+						</td>
+					</tr>
+				</tbody>
+			</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 分页 -->
+<div class="container" id="pag-container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<ul class="pagination">
+				<li>
+					 <a href="#">上一页</a>
+				</li>
+				<li>
+					 <a href="#">&nbsp;1&nbsp;</a>
+				</li>
+				<li>
+					 <a href="#">&nbsp;2&nbsp;</a>
+				</li>
+				<li>
+					 <a href="#">&nbsp;3&nbsp;</a>
+				</li>
+				<li>
+					 <a href="#">&nbsp;4&nbsp;</a>
+				</li>
+				<li>
+					 <a href="#">&nbsp;5&nbsp;</a>
+				</li>
+				<li>
+					 <a href="#">下一页</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

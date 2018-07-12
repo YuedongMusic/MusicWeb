@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页-发现音乐</title>
+<!-- css -->
+	 
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+	 <!--
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">-->
+	<link href="css/find.css" rel="stylesheet">
+	<link href="css/header.css" rel="stylesheet">
+	 
+	<!-- js -->
+	
+	<script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+</head>
+<body>
+
+ <!-- 最外层容器 -->
+  <div class="container" id="header-container">
+  <div class="row clearfix">
+		<div class="col-md-12 column" style="height:20px">
+		</div></div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+			
+				
+				<div class="col-md-3 column">
+				  <!-- 网页icon+标题 -->
+				  <img id="header-icon" alt="140x140" src="images/MusicIcon.png" />
+				  <span id="header-font">悦动音乐</span>
+				</div>
+				
+				<div class="col-md-4 column"  style="width:260px">
+				  <!-- 导航栏+搜索框 -->
+				  <nav class="navbar navbar-default" role="navigation" id="header-navbar" >
+					<div class="navbar-header">
+					  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					   <span class="sr-only">Toggle navigation</span>
+					   <span class="icon-bar"></span>
+					   
+					   <span class="icon-bar"></span>
+					  </button>
+					  <a class="navbar-brand" href="find.html" >首页</a>
+					</div>
+					
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								 <a href="mysonglist.html">我的</a>
+							</li>
+							<li>
+								 <a href="#">播放</a>
+							</li>
+							
+						</ul>
+						
+					</div>
+				  </nav>
+				</div>
+				
+				<div class="col-md-3 column">
+						<div style="border:2px solid #a1a1a1;border-radius:25px; height:50px;width:200px;margin-top:10px;">
+ 						 	<span class="glyphicon glyphicon-search" style="padding:15px;"></span>
+ 							 <input type="text" class="" style="border-width:0px;width:120px;outline:none;" onkeydown="onKeyDown(event)"/>         
+							</div>
+						</div>
+				
+				<div class="col-md-2 column" id="header-user">
+				  <!-- 用户图标+ -->
+				  <img id="user-icon" alt="140x140" src="images/UserIcon.png" />
+				  <!-- 个人信息下拉 -->
+				  <li class="dropdown">
+				    <a class="dropdown-toggle" href="#" data-toggle="dropdown">用户名<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+					  <li>
+					    <a href="userinfo.html">个人信息</a>
+					  </li>
+					  <li class="divider">
+					  </li>
+					  <li>
+					    <a href="find.html">退出登录</a>
+					  </li>
+					</ul>
+				  </li>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+  </div>
+  <!-- 分割线 -->
+  <div class="container">
+	<div class="row clearfix">
+	  <div class="col-md-12 column">
+  	    <div class="line-header"></div>
+  	  </div>
+  	</div>
+  </div>   
+  
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+		
+		<!-- 轮播图 -->
+			<div class="carousel slide" id="carousel-1">
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target="#carousel-1">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-1">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-1" class="active">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item">
+						<img alt="" src="images/B3.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								轮播图1
+							</h4>
+							<p>
+								评级机构胡斯托·奥迪奥，在蛋白质交流的抗氧化剂，执法需要华富嘉洛。枕在ID非1001 AVENUE孕妇在需要担心桑达遍布全国各地。没有人谁悲ID NIBH ultricies车的那场比赛。
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="images/B2.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								轮播图2
+							</h4>
+							<p>
+								评级机构胡斯托·奥迪奥，在蛋白质交流的抗氧化剂，执法需要华富嘉洛。枕在ID非1001 AVENUE孕妇在需要担心桑达遍布全国各地。没有人谁悲ID NIBH ultricies车的那场比赛。
+							</p>
+						</div>
+					</div>
+					<div class="item active">
+						<img alt="" src="images/B1.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								轮播图3
+							</h4>
+							<p>
+								评级机构胡斯托·奥迪奥，在蛋白质交流的抗氧化剂，执法需要华富嘉洛。枕在ID非1001 AVENUE孕妇在需要担心桑达遍布全国各地。没有人谁悲ID NIBH ultricies车的那场比赛。
+							</p>
+						</div>
+					</div>
+				</div> <a class="left carousel-control" href="#carousel-1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 每日推荐小标题 -->
+	<div id="Headline-1">每日推荐</div>
+	
+	 <!-- 标题装饰条 -->
+	 <div class="container" >
+	<div class="row clearfix">
+	  <div class="col-md-12 column">
+  	    <div class="line-1"></div>
+  	  </div>
+  	</div>
+  </div>
+	 
+	 <!-- 每日推荐歌曲信息 --> 
+	<div class="row clearfix">
+		<div class="col-md-2 column">
+		<img class="pic-1" src="images/a001.jpg"/>
+		<div class="recommend-name-1" >音乐1</div>
+		<img class="pic-1" src="images/a001.jpg"/>
+		<div class="recommend-name-1" >音乐1</div>
+		<img class="pic-1" src="images/a001.jpg"/>
+		<div class="recommend-name-1" >音乐1</div>
+		</div>
+		<div class="col-md-2 column">
+		<img class="pic-1" src="images/a002.jpg"/>
+		<div class="recommend-name-1" >音乐2</div>
+		<img class="pic-1" src="images/a002.jpg"/>
+		<div class="recommend-name-1" >音乐2</div>
+		<img class="pic-1" src="images/a002.jpg"/>
+		<div class="recommend-name-1" >音乐2</div>
+		</div>
+		<div class="col-md-2 column">
+		<img class="pic-1" src="images/a003.jpg"/>
+		<div class="recommend-name-1" >音乐3</div>
+		<img class="pic-1" src="images/a003.jpg"/>
+		<div class="recommend-name-1" >音乐3</div>
+		<img class="pic-1" src="images/a003.jpg"/>
+		<div class="recommend-name-1" >音乐3</div>
+		</div>
+		<div class="col-md-2 column">
+		<img class="pic-1" src="images/a004.jpg"/>
+		<div class="recommend-name-1" >音乐4</div>
+		<img class="pic-1" src="images/a004.jpg"/>
+		<div class="recommend-name-1" >音乐4</div>
+		<img class="pic-1" src="images/a004.jpg"/>
+		<div class="recommend-name-1" >音乐4</div>
+		</div>
+		<div class="col-md-2 column">
+		<img class="pic-1" src="images/a005.jpg"/>
+		<div class="recommend-name-1" >音乐5</div>
+		<img class="pic-1" src="images/a005.jpg"/>
+		<div class="recommend-name-1" >音乐5</div>
+		<img class="pic-1" src="images/a005.jpg"/>
+		<div class="recommend-name-1" >音乐5</div>
+		</div>
+		<div class="col-md-2 column">
+		<img class="pic-1" src="images/d001.jpg"/>
+		<div class="recommend-name-1" >音乐6</div>
+		<img class="pic-1" src="images/d001.jpg"/>
+		<div class="recommend-name-1" >音乐6</div>
+		<img class="pic-1" src="images/d001.jpg"/>
+		<div class="recommend-name-1" >音乐6</div>
+		</div>
+	</div>
+	
+	<!-- 最新音乐+排行榜小标题 -->
+	    <div id="Headline-2">最新音乐</div>
+	     <div id="Headline-3">排行榜</div>
+	    
+	    <!-- 标题装饰条 -->
+  <div class="container" >
+	<div class="row clearfix">
+	  <div class="col-md-12 column">
+  	    <div class="line-2"></div>
+  	    <div class="line-3"></div>
+  	  </div>
+  	</div>
+  </div>
+	
+	 <!-- 最新音乐 -->
+  <div class="container" id="headline-container">
+	<div class="row clearfix">
+		<div class="col-md-8 column">
+		
+         <div class="col-md-3 column">
+		        <img class="pic-2" src="images/timg.jpg"/>
+		<div class="recommend-name-2" >音乐7</div>
+				<img class="pic-2" src="images/timg.jpg"/>
+		<div class="recommend-name-2" >音乐7</div>
+		</div>
+		
+		<div class="col-md-3 column">
+		        <img class="pic-2" src="images/星空告白.jpg"/>
+		<div class="recommend-name-2" >音乐8</div>
+				<img class="pic-2" src="images/星空告白.jpg"/>
+		<div class="recommend-name-2" >音乐8</div>
+		</div>
+		
+		<div class="col-md-3 column">
+		        <img class="pic-2" src="images/冰霜叶.jpg"/>
+		<div class="recommend-name-2" >音乐9</div>
+				<img class="pic-2" src="images/冰霜叶.jpg"/>
+		<div class="recommend-name-2" >音乐9</div>
+		</div>
+		
+		<div class="col-md-3 column">
+		        <img class="pic-2" src="images/timg.jpg"/>
+		<div class="recommend-name-2" >音乐10</div>
+				<img class="pic-2" src="images/timg.jpg"/>
+		<div class="recommend-name-2" >音乐10</div>
+		</div>
+		
+		</div>
+
+
+<!-- 排行榜 -->
+	<div class="row clearfix">
+		<div class="col-md-4 column">
+		<table class="table">
+				<thead>
+					<tr>
+						<th>
+							编号
+						</th>
+						<th>
+							音乐名
+						</th>
+						<th>
+							歌手
+						</th>
+						<th>
+							专辑
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							其实
+						</td>
+						<td>
+							薛之谦
+						</td>
+						<td>
+							意外
+						</td>
+					</tr>
+					<tr class="interval">
+						<td>
+							2
+						</td>
+						<td>
+							杀手
+						</td>
+						<td>
+							林俊杰
+						</td>
+						<td>
+							西界
+						</td>
+					</tr>
+					<tr class="interval">
+						<td>
+							3
+						</td>
+						<td>
+							关不上的窗
+						</td>
+						<td>
+							周传雄
+						</td>
+						<td>
+							恋人创世纪
+						</td>
+					</tr>
+					<tr class="interval">
+						<td>
+							4
+						</td>
+						<td>
+							处处吻
+						</td>
+						<td>
+							杨千嬅
+						</td>
+						<td>
+							Simply Me
+						</td>
+					</tr>
+					<tr class="interval">
+						<td>
+							5
+						</td>
+						<td>
+							七友
+						</td>
+						<td>
+							梁汉文
+						</td>
+						<td>
+							梁汉文集
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>	
+
+	</div>
+</div>
+	
+</body>
+</html>
